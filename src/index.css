@@ -2,41 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Chat-focused design system with vibrant, fun colors */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Main backgrounds */
+    --background: 240 6% 10%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Chat backgrounds */
+    --chat-background: 240 8% 12%;
+    --sidebar-background: 240 6% 8%;
+    
+    /* Message bubbles */
+    --message-own: 270 91% 68%;
+    --message-own-foreground: 0 0% 100%;
+    --message-other: 220 13% 18%;
+    --message-other-foreground: 0 0% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Interactive elements */
+    --primary: 270 91% 68%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 270 91% 75%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --secondary: 220 13% 18%;
+    --secondary-foreground: 0 0% 95%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Accent colors */
+    --accent-success: 142 76% 36%;
+    --accent-warning: 38 92% 50%;
+    --accent-error: 0 84% 60%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* UI elements */
+    --card: 220 13% 16%;
+    --card-foreground: 0 0% 95%;
+    
+    --border: 240 6% 20%;
+    --input: 240 6% 16%;
+    --ring: 270 91% 68%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Fun gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(270 91% 68%) 0%, hsl(260 91% 75%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(220 13% 18%) 0%, hsl(240 6% 20%) 100%);
+    --gradient-background: linear-gradient(135deg, hsl(240 6% 10%) 0%, hsl(240 8% 12%) 100%);
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Animation variables */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --bounce-in: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
 
